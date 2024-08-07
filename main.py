@@ -9,7 +9,7 @@ path = 'IMG_1599.MP4'
 cap = cv2.VideoCapture(path)
 cap.set(3, 640)
 cap.set(4, 480)
-model_path = 'model_subdirectory/train_model_863+51photo_yolos_448_v1.1.pt'
+model_path = 'train_model_863+51photo_yolos_448_v1.1.pt'
 model = YOLO(model_path)
 
 classNames = ['car', 'armor', 'mobic', 'smoke', 'build']
