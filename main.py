@@ -5,7 +5,7 @@ import math
 import time
 
 #cap = cv2.VideoCapture(0)
-path = 'IMG_1599.MP4'
+path = 'IMG_1599.mp4'
 cap = cv2.VideoCapture(path)
 cap.set(3, 640)
 cap.set(4, 480)
