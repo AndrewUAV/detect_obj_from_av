@@ -12,12 +12,12 @@ def delete_every_third_photo(folder_path):
         for i in range(2, len(image_files), 3):
             file_to_delete = os.path.join(folder_path, image_files[i])
             os.remove(file_to_delete)
-            print(f'Удалена фотография: {image_files[i]}')
+            print(f'Видалена фотографія: {image_files[i]}')
 
-        print('Удаление завершено.')
+        print('Видалення завершено.')
 
     except Exception as e:
-        print(f'Произошла ошибка: {e}')
+        print(f'Помилка: {e}')
 
 folder_path = 'data_for_learn/photo_from_video'
 delete_every_third_photo(folder_path)
