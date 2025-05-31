@@ -8,7 +8,7 @@ def extract_frames(video_path, output_folder):
     cap = cv2.VideoCapture(video_path)
 
     if not cap.isOpened():
-        print(f"Не удалось открыть видеофайл: {video_path}")
+        print(f"Dont open video: {video_path}")
         return
 
     fps = int(cap.get(cv2.CAP_PROP_FPS))
